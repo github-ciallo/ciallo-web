@@ -3,5 +3,5 @@ export default () => {
     <div>
       <div>Home</div>
     </div>
-  )
-}
+  );
+};

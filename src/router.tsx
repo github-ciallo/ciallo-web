@@ -11,43 +11,43 @@ const SignUp = lazy(() => import('@/pages/no-login/sign-up'));
 const Home = lazy(() => import('@/pages/home'));
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <Outlet />,
-		children: [
-			{
-				path: '',
-				element: <Home />,
-			},
-			{
-				path: 'dashboard',
-				element: <Dashboard />,
-				children: [
-					{
-						path: '',
-						element: <DashboardIndex />,
-						loader: () => {
-							return <div></div>;
-						},
-					},
-				],
-			},
-			{
-				path: '',
-				element: <NoLoginLayout />,
-				children: [
-					{
-						path: 'signIn',
-						element: <SignIn />,
-					},
-					{
-						path: 'signUp',
-						element: <SignUp />,
-					},
-				],
-			},
-		],
-	},
+  {
+    path: '/',
+    element: <Outlet />,
+    children: [
+      {
+        path: '',
+        element: <Home />,
+      },
+      {
+        path: 'dashboard',
+        element: <Dashboard />,
+        children: [
+          {
+            path: '',
+            element: <DashboardIndex />,
+            loader: () => {
+              return <div></div>;
+            },
+          },
+        ],
+      },
+      {
+        path: '',
+        element: <NoLoginLayout />,
+        children: [
+          {
+            path: 'signIn',
+            element: <SignIn />,
+          },
+          {
+            path: 'signUp',
+            element: <SignUp />,
+          },
+        ],
+      },
+    ],
+  },
 ]);
 
 export default router;

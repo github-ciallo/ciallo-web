@@ -6,17 +6,17 @@ import router from './router.tsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-	<React.StrictMode>
-		<React.Suspense fallback={null}>
-			<ConfigProvider
-				theme={{
-					token: {
-						colorPrimary: '#ff9c18',
-					},
-				}}
-			>
-				<RouterProvider router={router} />
-			</ConfigProvider>
-		</React.Suspense>
-	</React.StrictMode>
+  <React.StrictMode>
+    <React.Suspense fallback={null}>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: '#ff9c18',
+          },
+        }}
+      >
+        <RouterProvider router={router} />
+      </ConfigProvider>
+    </React.Suspense>
+  </React.StrictMode>,
 );

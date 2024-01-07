@@ -1,8 +1,8 @@
 {
-	"recommendations": [
-		"eamodio.gitlens",
-		"naumovs.color-highlight",
-		"streetsidesoftware.code-spell-checker",
-		"wayou.vscode-todo-highlight"
-	]
+  "recommendations": [
+    "eamodio.gitlens",
+    "naumovs.color-highlight",
+    "streetsidesoftware.code-spell-checker",
+    "wayou.vscode-todo-highlight"
+  ]
 }

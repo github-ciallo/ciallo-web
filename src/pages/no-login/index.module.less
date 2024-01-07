@@ -1,119 +1,119 @@
 .content {
-	width: 100%;
-	height: 100%;
-	padding: 24px;
-	box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
 
-	.form {
-		:global {
-			.ant-form-item-label label {
-				font-size: 18px;
-				color: #ffffff;
-				user-select: none;
-			}
+  .form {
+    :global {
+      .ant-form-item-label label {
+        font-size: 18px;
+        color: #ffffff;
+        user-select: none;
+      }
 
-			.ant-form-item-control-input-content {
-				* {
-					background-color: rgba(0, 0, 0, 0);
-					color: #ffffff;
-					border-radius: 0;
-					font-size: 18px;
-					border-top: none;
-					border-left: none;
-					border-right: none;
-					border-bottom-width: 2px;
-					border-bottom-color: #ffffff;
+      .ant-form-item-control-input-content {
+        * {
+          background-color: rgba(0, 0, 0, 0);
+          color: #ffffff;
+          border-radius: 0;
+          font-size: 18px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom-width: 2px;
+          border-bottom-color: #ffffff;
 
-					&:focus-within,
-					&:hover {
-						box-shadow: none !important;
-						border-bottom-color: #ff9c18;
-					}
+          &:focus-within,
+          &:hover {
+            box-shadow: none !important;
+            border-bottom-color: #ff9c18;
+          }
 
-					&::selection {
-						background-color: rgba(0, 0, 0, 0.3);
-					}
-				}
+          &::selection {
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+        }
 
-				.ant-input-suffix span {
-					font-size: 18px;
+        .ant-input-suffix span {
+          font-size: 18px;
 
-					&:hover {
-						color: #ff9c18;
-					}
-				}
-			}
-		}
-	}
+          &:hover {
+            color: #ff9c18;
+          }
+        }
+      }
+    }
+  }
 
-	.buttons {
-		width: 100%;
-		user-select: none;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+  .buttons {
+    width: 100%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-		.button {
-			padding: 4px 8px;
-			box-sizing: border-box;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
-			transition: all 0.3s ease;
+    .button {
+      padding: 4px 8px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
 
-			&::after {
-				content: '';
-				position: absolute;
-				width: 0%;
-				height: 2px;
-				background-color: #ff9c18;
-				bottom: -2px;
-				border-radius: 1px;
-				transition: all 0.3s ease;
-			}
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #ff9c18;
+        bottom: -2px;
+        border-radius: 1px;
+        transition: all 0.3s ease;
+      }
 
-			&:hover {
-				color: #ff9c18;
+      &:hover {
+        color: #ff9c18;
 
-				&::after {
-					width: 100%;
-				}
-			}
-		}
-	}
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 
-	.actions {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		user-select: none;
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
 
-		&Button {
-			display: flex;
-			justify-content: center;
-			font-size: 14px;
-			cursor: pointer;
-			transition: all 0.3s ease;
+    &Button {
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
 
-			&::after {
-				content: '';
-				position: absolute;
-				width: 0%;
-				height: 1px;
-				background-color: #ff9c18;
-				bottom: -2px;
-				border-radius: 1px;
-				transition: all 0.3s ease;
-			}
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        background-color: #ff9c18;
+        bottom: -2px;
+        border-radius: 1px;
+        transition: all 0.3s ease;
+      }
 
-			&:hover {
-				color: #ff9c18;
+      &:hover {
+        color: #ff9c18;
 
-				&::after {
-					width: 100%;
-				}
-			}
-		}
-	}
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
